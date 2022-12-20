@@ -1,0 +1,14 @@
+[package]
+description = "LED-blinking example on a NXP LPC1342 chip"
+edition = "2021"
+license = "0BSD"
+name = "lpc1342-pac-blinky"
+publish = false
+rust-version = "1.66"
+version = "0.0.0"
+
+[dependencies]
+cortex-m = "0.7.3"
+cortex-m-rt = "0.7.0"
+lpc13xx-pac = { version = "0.2.1", features = ["lpc1342"] }
+panic-halt = "0.2.0"
